@@ -1,3 +1,10 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx8380517e6162415f", "7b0df232b9898d938b8cb905279e0da7");
+$signPackage = $jssdk->GetSignPackage();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +42,48 @@
 		</a>
 	</footer>
 </body>
+<script>
+	wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: [
+     'checkJsApi',
+        'onMenuShareWeibo',
+        'onMenuShareQZone',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onVoiceRecordEnd',
+        'playVoice',
+        'onVoicePlayEnd',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+     ]
+  });
+</script>
 </html>
