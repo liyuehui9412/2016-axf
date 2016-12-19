@@ -1,0 +1,337 @@
+/*
+	爱鲜蜂
+
+	2016-12-9 20:32:05
+
+	李跃辉 V1
+*/
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:100px;
+}
+body{
+	font-size:16px;
+	font-family:微软雅黑;
+	letter-spacing:0.005rem;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style-type:none;
+}
+/*			第一次进首页		*/
+#shou{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#ffd600;
+	text-align:center;
+	display:none;
+	z-index:99999;
+}
+#shou>img:first-of-type{
+	width:73%;
+	margin-top:41%;
+}
+#shou>img:last-of-type{
+	margin-top: 7%;
+    width: 12%;
+}
+/*				定位失败						*/
+.dingFlase{
+	line-height:0.594rem;
+	text-align:center;
+	display:none;
+}
+.dsj{
+	display:inline-block;
+	border:0.05rem solid transparent;
+	border-top:0.07rem solid black;
+	margin-top:0.1rem;
+}
+.chooseDiZhi{
+	width:100%;
+	text-align:center;
+	padding-top:1.8rem;
+	display:none;
+}
+.chooseDiZhi>img{
+	width:24%;
+}
+/*				进入主页面				*/
+header{
+	width:100%;
+	height:0.594rem;
+	background-color:#ffd600;
+	position:fixed;
+	z-index:2;
+}
+/*				登录之后进入的页面			*/
+/*		头部		*/
+.diZhi{
+	width:100%;
+	display:flex;
+}
+.juTiDiZhi{
+	max-width:68%;
+	min-width:0.59rem;
+	display:inline-block;
+	line-height:0.582rem;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align:center;
+	margin:auto;
+	font-weight:bold;
+	font-size:0.18rem;
+}
+/*		搜索按钮		*/
+.diZhi>p{
+	width:0.39rem;
+	float:right;
+}
+.diZhi>p>img{
+	width: 65%;
+    margin-top:0.09rem;
+}
+.diZhi>p>span{
+	font-size: 0.13rem;
+    position: relative;
+    bottom: 6px;
+}
+/*					主页面内容						*/
+/*	轮播图	*/
+.swiper-container {
+    width:100%;
+    background-color:#efefef;
+    padding-top: 58px;
+} 
+.swiper-wrapper{
+	width:100%;
+}
+.swiper-slide{
+	width:100%;
+}
+.swiper-slide>img{
+	width:100%;
+}
+/*		填充	*/
+.add{
+	width:100%;
+	height:0.1rem;
+	background-color:#efefef;
+}
+/*	疯狂秒杀 现货直供。。。	*/
+.fourChoose{
+	width:100%;
+	padding:0.1rem 0;
+	display:flex;
+	justify-content:space-around;
+}
+.fourChoose>figure{
+	flex:2;
+	text-align:center;
+}
+.fourChoose>figure>img{
+	width:100%;
+}
+/*		主销食品	*/
+.zhuXiao{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+.zhuXiao>img{
+	width:33%;
+	height:100%;
+}
+/*		便利店	*/
+.shopDian{
+	width:100%;
+}
+.bian{
+	width:100%;
+}
+.bian>img{
+	width:100%;
+}
+.reXiao{
+	width:100%;
+	display: flex;
+    justify-content: space-around;
+}
+.reXiao>img{
+	width:46%;
+	height:1%;
+}
+.goodFood{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	text-align:center;
+	padding-bottom:0.15rem;
+}
+.goodFood>figure{
+	width:25%;
+	flex:1;
+	font-size:1.0em;
+}
+.goodFood>figure>img{
+	width:100%;
+}
+.banFood{
+	border-top:3px solid #f7f7f7;
+	width:100%;
+	display:flex;
+}
+.banFood>div{
+	width:50%;
+	flex:1;
+}
+.banFood>div:first-of-type{
+	border-right:2px solid #f7f7f7;
+}
+.banFood>div>img{
+	width:100%;
+}
+/*			主销食品区			*/
+.main{
+	width:100%;
+}
+.main_1{
+	width:100%;
+}
+/*		优质水果		*/
+.main_1>h4{
+	height:0.517rem;
+	line-height:0.517rem;
+	font-size:1.2em;
+}
+.main_1_sp1{
+	display:inline-block;
+	padding:0.1rem 0.04rem;
+	background-color:#f38631;
+	margin-left:0.15rem;
+	margin-top:0.1rem;
+	position:relative;
+	top:0.05rem;
+}
+.more{
+	float:right;
+	margin-right:0.15rem;
+	font-weight:initial;
+	font-size:0.8em;
+}
+/*		大图		*/
+.main_1_img{
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+}
+.main_1_img>img{
+	width: 93%;
+    height: 1%;
+}
+/*		shop信息		*/
+.shopContain{
+	width:100%;
+	box-sizing:border-box;
+	display:flex;
+}
+.shopContain>figure:nth-of-type(2){
+	border-right:2px solid #f7f7f7;
+	border-left:2px solid #f7f7f7;
+}
+.shopInfo{
+	width:33%;
+	flex:1;
+	position:relative;
+}
+.shopInfo>img{
+	width:100%;
+}
+.shopInfo>figcaption{
+	text-indent:0.05rem;
+}
+.shopInfo>figcaption>p{
+	width:90%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	line-height:0.3rem;
+}
+.redJingXuan{
+	padding:0.01rem 0.05rem;
+	border:1px solid #ff0000;
+	font-size:0.1rem;
+	border-radius:0.05rem;
+	margin: 2px 0;
+    display: inline-block;
+    text-indent:0;
+    margin-left:0.06rem;
+}
+.kg{
+	color:#999;
+}
+.song{
+	padding: 0.001rem 0.06rem;
+    background-color: #ff0000;
+    color: white;
+    font-size: 0.12rem;
+    border-radius: 5px;
+    margin-left: 7px;
+    letter-spacing:0.02rem;
+}
+.newPrice{
+	color:#ff4300;
+}
+.oldPrice{
+	color:#acacac;
+	text-decoration: line-through;
+}
+.floatSpan{
+	display:inline-block;
+	padding:0.15rem;
+	border:2px solid #e0e0e0;
+	position:absolute;
+	bottom:0.05rem;
+	right:0.05rem;
+	border-radius:50%;
+	background:url(../img/+.png) no-repeat;
+	background-color:#ff4300;
+    background-position: -37px -2px;
+    background-size: 70px;
+}
+/*		顶起页面		*/
+.dingQi{
+	width:100%;
+	height:2.0rem;
+}
+/*						页脚				*/
+footer{
+	width:100%;
+	background-color:#f5f5f5;
+	display:flex;
+	position:fixed;
+	bottom:0;
+}
+footer>a{
+	display:inline-block;
+	flex:1 1 auto;
+	height:0.619rem;
+	text-align:center;
+}
+footer>a>img{
+	padding-top:0.05rem;
+	width:30%;
+	/*background-color:orange;*/
+}
+.imgs3{
+	width:27%;
+}

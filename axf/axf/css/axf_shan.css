@@ -1,0 +1,247 @@
+/*
+	爱鲜蜂
+
+	2016-12-9 20:32:05
+
+	李跃辉 V1
+*/
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:100px;
+}
+body{
+	font: 16px sans-serif;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style-type:none;
+}
+/*				进入主页面				*/
+header{
+	width:100%;
+	height:0.594rem;
+	background-color:#ffd600;
+	position:fixed;
+	z-index:2;
+}
+/*				登录之后进入的页面			*/
+/*		头部		*/
+.diZhi{
+	width:100%;
+	display:flex;
+}
+.juTiDiZhi{
+	max-width:68%;
+	min-width:0.59rem;
+	display:inline-block;
+	line-height:0.582rem;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align:center;
+	margin:auto;
+	font-weight:bold;
+	font-size:0.18rem;
+}
+/*		搜索按钮		*/
+.diZhi>p{
+	width:0.39rem;
+	float:right;
+}
+.diZhi>p>img{
+	width: 65%;
+    margin-top:0.09rem;
+}
+.diZhi>p>span{
+	font-size: 0.13rem;
+    position: relative;
+    bottom: 6px;
+}
+/*			主页面			*/
+main{
+	width:100%;
+	display:flex;
+	padding-top:0.59rem;
+	height: 615px;
+}
+/*		左页面		*/
+.main_left{
+	width:24%;
+	background-color:#f8f8f8;
+	overflow-y: auto;
+    overflow-x: hidden;
+    color:#6d6d6d;
+}
+.main_left>ul{
+	width:100%;
+}
+.main_left>ul>li{
+	width:100%;
+	height:0.52rem;
+	line-height:0.52rem;
+	text-align: center;
+	border-bottom:1px solid #e0e0e0;
+}
+.bg{
+	background:url(../img/teJia.jpg) no-repeat;
+	background-size: 37px;
+    background-position:right top;
+}
+.shan_span{
+	display: inline-block;
+    padding: 0.24rem 0.04rem;
+    background-color: red;
+    position: absolute;
+    left: 0;
+}
+/*		右页面		*/
+.main_right{
+	width:76%;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+/*		右上排序		*/
+.main_right_top{
+	width: 76%;
+    height: 0.52rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 3;
+    right:0;
+    background-color:rgba(250,250,250,0.95);
+}
+.main_right_top>span{
+	width:50%;
+	text-align:center;
+	line-height:0.52rem;
+}
+.main_right_top>span:first-of-type{
+	border-right:1px solid #e0e0e0;
+}
+.main_right_top>span>img{
+	width:8%;
+	margin-left:0.05rem;
+}
+/*			右面主体内容		*/
+.main_center{
+	width:100%;
+	margin-top:0.52rem;
+}
+.shopInfo{
+	width:100%;
+	height:1.174rem;
+	position:relative;
+	display:flex;
+	border-bottom:1px solid #e0e0e0;
+}
+.shopInfo>img{
+	width: 35.22%;
+    height: 87%;
+    margin-top: 6px;
+}
+.shopInfo>figcaption{
+	width:66.78%;
+	text-indent:0.05rem;
+}
+.shopInfo>figcaption>p{
+	width:90%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	line-height:0.28rem;
+}
+.redJingXuan{
+	padding:0.01rem 0.05rem;
+	border:1px solid #ff0000;
+	font-size:0.1rem;
+	border-radius:0.05rem;
+	margin: 2px 0;
+    display: inline-block;
+    text-indent:0;
+    margin-left:0.06rem;
+    color:#ff0000;
+}
+.kg{
+	color:#999;
+}
+.song{
+	padding: 0.001rem 0.06rem;
+    background-color: #ff0000;
+    color: white;
+    font-size: 0.12rem;
+    border-radius: 5px;
+    margin-left: 7px;
+    letter-spacing:0.02rem;
+}
+.newPrice{
+	color:#ff4300;
+}
+.oldPrice{
+	color:#acacac;
+	text-decoration: line-through;
+}
+.floatSpan{
+	display: inline-block;
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.05rem;
+    height: 0.35rem;
+}
+.floatSp1{
+	padding:0.15rem;
+	display:inline-block;
+	border:2px solid #e0e0e0;
+	border-radius:50%;
+	background:url(../img/+.png) no-repeat;
+	background-color:#ff4300;
+    background-position: -0.02rem -0.02rem;
+    background-size: 0.7rem;
+    float:left;
+}
+.floatS{
+	display: inline-block;
+    width:0.22rem;
+    line-height: 0.35rem;
+    text-align: center;
+}
+.floatSp2{
+	padding:0.15rem;
+	display:inline-block;
+	border:2px solid #e0e0e0;
+	border-radius:50%;
+	background:url(../img/+.png) no-repeat;
+	background-color:#ff4300;
+    background-position: -0.37rem -0.02rem;
+    background-size: 0.7rem;
+    float:right;
+}
+/*						页脚				*/
+footer{
+	width:100%;
+	background-color:#f5f5f5;
+	display:flex;
+	position:fixed;
+	bottom:0;
+}
+footer>a{
+	display:inline-block;
+	flex:1 1 auto;
+	height:0.619rem;
+	text-align:center;
+}
+footer>a>img{
+	padding-top:0.05rem;
+	width:30%;
+	/*background-color:orange;*/
+}
+.imgs3{
+	width:27%;
+}

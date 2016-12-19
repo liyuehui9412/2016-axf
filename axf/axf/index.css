@@ -1,0 +1,63 @@
+/*
+	爱鲜蜂
+
+	2016-12-9 20:32:05
+
+	李跃辉 V1
+*/
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:100px;
+}
+body{
+	font-size:16px;
+	font-family:微软雅黑;
+	letter-spacing:0.005rem;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style-type:none;
+}
+/*						页脚				*/
+footer{
+	width:100%;
+	background-color:#f5f5f5;
+	display:flex;
+	position:fixed;
+	bottom:0;
+}
+footer>a{
+	display:inline-block;
+	flex:1 1 auto;
+	height:0.619rem;
+	text-align:center;
+}
+footer>a>img{
+	padding-top:0.05rem;
+	width:30%;
+}
+.imgs3{
+	width:27%;
+}	
+.shouYe_gouWuChe{
+	position:relative;
+}
+.gooo{
+	display: inline-block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #f40;
+    top: 0.07rem;
+    right: 14px;
+    border-radius: 20px;
+    line-height: 22px;
+    text-align: center;
+    display:none;
+}

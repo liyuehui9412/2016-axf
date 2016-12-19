@@ -1,0 +1,17 @@
+<script type="text/html" id="shan_List">
+	<%for(var i = 0; i < lis.length; i++){%>
+		<div class="main_center">
+			<figure class="shan_shopInfo">
+				<img class="lazy"; data-original =<%=lis[i].img%>  alt=<%=lis[i].long_name%>>
+				<h2 class="moveDonghua"></h2>
+				<figcaption>
+					<p><%=lis[i].name%></p>
+					<span class="redJingXuan">精选</span>
+					<p class="kg"><%=lis[i].specifics%></p>
+					<p><span class="newPrice"><%=lis[i].partner_price%></span><span class="oldPrice"><%=lis[i].market_price%></span></p>
+				</figcaption>
+				<p class="shan_floatSpan"><span class="shan_floatSp1"></span><span class="shan_floatS">1</span><span class="shan_floatSp2"></span></p>
+			</figure>
+		</div>
+	<%}%>
+</script>

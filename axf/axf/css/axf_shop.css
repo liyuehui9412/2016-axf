@@ -1,0 +1,304 @@
+/*
+	爱鲜蜂
+
+	2016-12-9 20:32:05
+
+	李跃辉 V1
+*/
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size:100px;
+}
+body{
+	font: 16px sans-serif;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+li{
+	list-style-type:none;
+}
+/*		头部购物车		*/
+header{
+	width:100%;
+	height:0.592rem;
+	line-height:0.592rem;
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+	background-color:#f9fafd;
+	border-bottom:1px solid #e0e0e0;
+	position:fixed;
+}
+/*		地址		*/
+nav{
+	width:100%;
+	padding-top:0.592rem;
+}
+.tab{
+	width:100%;
+    background: url(../img/xian.png) no-repeat;
+    background-repeat-x: initial;
+    background-size: 60px;
+}
+.tab tr{
+	width:100%;
+	display:flex;
+}
+.first{
+	width:27%;
+	padding:0.07rem 0;
+	font-weight: initial;
+}
+.two{
+	width:55%;
+	padding:0.07rem 0;
+	text-align:left;
+	font-weight: initial;
+}
+.mod{
+	width:18%;
+	margin-top:0.14rem;
+	text-align:center;
+}
+.add{
+	width:100%;
+	height:0.03rem;
+	background: url(../img/xian.png) no-repeat;
+    background-repeat-x: initial;
+    background-size: 60px;
+}
+.add2{
+	width:100%;
+	height:0.1rem;
+	background-color:#efefef;
+}
+/*		凑单专区		*/
+.cou{
+	width:100%;
+	border-bottom:1px solid #efefef;
+	display:flex;
+	justify-content:center;
+}
+.cou>div{
+	width:96%;
+}
+.cou p{
+	width:100%;
+	line-height:0.318rem;
+}
+.cou p>span{
+	padding: 0.01rem 0.03rem;
+    background-color: #ffd600;
+    margin-right: 10px;
+}
+.cou p>a{
+	padding: 0.0003rem 0.1rem;
+    border: 1px solid #ff744d;
+    color: #eb7349;
+    float: right;
+    border-radius: 20px;
+    margin-right: 0.24rem;
+    margin-top: 5px;
+}
+/*		0元起送 	*/
+.timeSong{
+	font-size:14px;
+	padding-top:0.1rem;
+	color:#999;
+}
+/*		收货时间		*/
+.shouTime{
+	width:100%;
+	line-height:0.64rem;
+	font-size:1.2em;
+	border-bottom:1px solid #e0e0e0;
+	display:flex;
+	justify-content:center;
+}
+.shouTime>div{
+	width:96%;
+}
+.songDa{
+	color:#e64f1a;
+	margin-left:12px;
+}
+.canYu{
+	float:right;
+	margin-right:0.1rem;
+}	
+/*	 备注区 	*/
+.remark{
+	width:100%;
+	height:0.64rem;
+	font-size:1.2em;
+	line-height:0.432rem;
+	border-bottom:1px solid #e0e0e0;
+	display:flex;
+	justify-content:center;
+}	
+.remark>div{
+	width:96%;
+}
+.remark p{
+	display:inline-block;
+	width:71.6%;
+	border:1px solid #999;
+	text-indent:0;
+	margin-left:0.15rem;
+	height:0.404rem;
+	margin-top:0.1rem;
+	border-radius:0.06rem;
+}
+.remark p>input{
+	width:100%;
+	font-size:1em;
+	outline:none;
+	border:none;
+}
+/*		shoping购物车内容		*/
+.shoping{
+	width:100%;
+}
+/*		商品信息	*/
+.shop_in{
+	width:100%;
+	height:1.02rem;
+	border-bottom:1px solid #e0e0e0;
+	display:flex;
+	justify-content:space-around;
+	font-size:1.1em;
+	position:relative;
+}
+/*	选择按钮	*/
+.choose{
+	display:inline-block;
+	width:15.4%;
+	height:100%;
+	background:url(../img/choose1.png) no-repeat;
+	background-size: 24px;
+    background-position: 19px 40px;
+}
+.choo{
+	background:url(../img/choose2.png) no-repeat;
+	background-size: 24px;
+    background-position: 19px 40px;
+}
+/*	结账	*/
+.bingo{
+	width:100%;
+	height:0.64rem;
+	line-height:0.64rem;
+	display:flex;
+	justify-content:space-around;
+}
+.quan{
+	display: inline-block;
+    width: 24.4%;
+    height: 100%;
+    background: url(../img/choose1.png) no-repeat;
+    background-size: 24px;
+    background-position: 18px 23px;
+}
+.onePay{
+	width:69%;
+	height:0.64rem;
+	display:flex;
+	justify-content:space-around;
+}
+.price{
+	width:40%;
+	display:inline-block;
+	color:red;
+}
+.ok{
+	width:31%;
+	text-align:center;
+	background-color:#ffd600;
+	line-height:0.64rem;
+}
+/*	具体信息	*/
+.shopInfo{
+	display:inline-block;
+	width:84.6%;
+	display:flex;
+	justify-content:space-around;
+}
+.shopInfo>img{
+	width:21%;
+	margin-top:0.14rem;
+}
+.shopInfo>figcaption{
+	width:79%;
+}
+.shopInfo>figcaption>p{
+	width:100%;
+	line-height:0.54rem;
+	text-indent:0.15rem;
+}
+/*		浮动增加按钮    	*/
+.floatSpan{
+	display: inline-block;
+    position: absolute;
+    bottom: 0.05rem;
+    right: 0.05rem;
+    height: 0.35rem;
+}
+.floatSp1{
+	padding:0.15rem;
+	display:inline-block;
+	border:2px solid #ffbe89;
+	border-radius:50%;
+	background:url(../img/+.png) no-repeat;
+	background-color:#ff4300;
+    background-position: -0.02rem -0.02rem;
+    background-size: 0.7rem;
+    float:left;
+}
+.floatS{
+	display: inline-block;
+    width:0.32rem;
+    line-height: 0.35rem;
+    text-align: center;
+}
+.floatSp2{
+	padding:0.15rem;
+	display:inline-block;
+	border:2px solid #ffbe89;
+	border-radius:50%;
+	background:url(../img/+.png) no-repeat;
+	background-color:#ff4300;
+    background-position: -0.37rem -0.02rem;
+    background-size: 0.7rem;
+    float:right;
+    margin-right:0.1rem;
+}
+.ding{
+	width:100%;
+	height:0.619rem;
+}
+/*						页脚				*/
+footer{
+	width:100%;
+	background-color:#f5f5f5;
+	display:flex;
+	position:fixed;
+	bottom:0;
+}
+footer>a{
+	display:inline-block;
+	flex:1 1 auto;
+	height:0.619rem;
+	text-align:center;
+}
+footer>a>img{
+	padding-top:0.05rem;
+	width:30%;
+}
+.imgs3{
+	width:27%;
+}	

@@ -1,0 +1,47 @@
+<script type="text/html" id="imgs">
+	<%for(var i in data.act_info[0].act_rows){%>
+		<div class="swiper-slide"><img src=<%=data.act_info[0].act_rows[i].activity.img%>></div>
+	<%}%>
+</script>
+
+<script type="text/html" id="modules2">
+	<%for(var i in data.act_info[1].act_rows){%>
+		<figure>
+			<img src=<%=data.act_info[1].act_rows[i].activity.img%>>
+			<figcaption><a href="#"><%=data.act_info[1].act_rows[i].activity.name%></a></figcaption>
+		</figure>
+	<%}%>
+</script>
+
+<script type="text/html" id="modules3">
+	<%for(var i = 0; i < 3; i++){%>
+		<img src=<%=data.act_info[3].act_rows[i].activity.img%>>
+	<%}%>
+</script>
+
+<script type="text/html" id="modules4">
+	<%for(var i in data.act_info[5].act_rows){%>
+		<div class="main_1">
+			<h4><span class="main_1_sp1"></span> <%=data.act_info[5].act_rows[i].category_detail.name%><p class="more">更多 ></p></h4>
+		</div>
+		<div class="main_1_img">
+			<img class="lazy"; data-original=<%=data.act_info[5].act_rows[i].activity.img%> alt="优选水果">
+		</div>
+			<div class="shou_shopContain">
+				<%for(var x in data.act_info[5].act_rows[i].category_detail.goods){%>
+				<figure class="shou_shopInfo">
+					<img class="lazy"; data-original=<%=data.act_info[5].act_rows[i].category_detail.goods[x].img%> alt="小浣熊">
+					<h1 id="pppp"></h1>
+					<figcaption>
+						<p><%=data.act_info[5].act_rows[i].category_detail.goods[x].name%></p>
+						<span class="redJingXuan">精选</span>
+						<p class="kg"><%=data.act_info[5].act_rows[i].category_detail.goods[x].specifics%></p>
+						<p><span class="newPrice">￥<%=data.act_info[5].act_rows[i].category_detail.goods[x].partner_price%></span><span class="oldPrice">￥<%=data.act_info[5].act_rows[i].category_detail.goods[x].market_price%></span></p>
+					</figcaption>
+					<span class="floatSpan"></span>
+				</figure>
+				<%}%>
+			</div>
+		<div class="add3"></div>
+	<%}%>
+</script>
