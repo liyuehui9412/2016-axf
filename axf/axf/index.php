@@ -12,13 +12,12 @@ $signPackage = $jssdk->GetSignPackage();
 	<meta charset="utf-8">
 	<meta name = "viewport", content="width=device-width,initial-scale = 1.0,minimum-scale = 1.0,maximum-scale =1.0,user-scalable =no">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script data-main="index.js" type="text/javascript" src="js/require.js"></script>
 </head>
 <body>
-	<div onclick="get()">获取地理位置</div>
-	<div onclick="getp()">获取坐标</div>
-	<!-- <div class="Main">
+	<!-- <div onclick="get()">获取地理位置</div>
+	<div onclick="getp()">获取坐标</div> -->
+	<div class="Main">
 		<div class="shou"></div>
 		<div class="shan"></div>
 		<div class="gou"></div>
@@ -42,7 +41,7 @@ $signPackage = $jssdk->GetSignPackage();
 			<img src="img/4.png" alt="首页">
 			<p>我的</p>
 		</a>
-	</footer> -->
+	</footer>
 </body>
 <script>
 	wx.config({
@@ -87,31 +86,6 @@ $signPackage = $jssdk->GetSignPackage();
         'openCard'
      ]
   });
-var latitude = 0,longitude = 0;
-function get(){
-wx.getLocation({
-    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
-    success: function (res) {
-        latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
-        longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
-        var speed = res.speed; // 速度，以米/每秒计
-        var accuracy = res.accuracy; // 位置精度
-        alert(latitude);
-        alert(longitude);
-    }
-});
-	
-}
 
-function getp(){
-wx.openLocation({
-    latitude: latitude, // 纬度，浮点数，范围为90 ~ -90
-    longitude: longitude, // 经度，浮点数，范围为180 ~ -180。
-    name: '', // 位置名
-    address: '', // 地址详情说明
-    scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
-    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
-});
-}
 </script>
 </html>

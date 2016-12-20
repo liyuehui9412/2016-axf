@@ -8,6 +8,7 @@ require.config({
 		"baidu":"./js/baiduTemplate",
 		"swiper":"./js/swiper-3.4.0.jquery.min",
 		"lazy":"./js/jquery.lazyload.min"
+		"wx":"http://res.wx.qq.com/open/js/jweixin-1.0.0"
 	}
 });
 
