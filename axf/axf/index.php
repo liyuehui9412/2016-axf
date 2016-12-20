@@ -16,9 +16,9 @@ $signPackage = $jssdk->GetSignPackage();
 	<script data-main="index.js" type="text/javascript" src="js/require.js"></script>
 </head>
 <body>
-	<div onclick="get()">获取地理位置</div>
-	<div onclick="getp()">获取坐标</div>
-	<!-- <div class="Main">
+	<!-- <div onclick="get()">获取地理位置</div>
+	<div onclick="getp()">获取坐标</div> -->
+	<div class="Main">
 		<div class="shou"></div>
 		<div class="shan"></div>
 		<div class="gou"></div>
@@ -42,7 +42,7 @@ $signPackage = $jssdk->GetSignPackage();
 			<img src="img/4.png" alt="首页">
 			<p>我的</p>
 		</a>
-	</footer> -->
+	</footer>
 </body>
 <script>
 	wx.config({
