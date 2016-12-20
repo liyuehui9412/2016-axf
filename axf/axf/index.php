@@ -12,7 +12,7 @@ $signPackage = $jssdk->GetSignPackage();
 	<meta charset="utf-8">
 	<meta name = "viewport", content="width=device-width,initial-scale = 1.0,minimum-scale = 1.0,maximum-scale =1.0,user-scalable =no">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<!-- <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> -->
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script data-main="index.js" type="text/javascript" src="js/require.js"></script>
 </head>
 <body>
